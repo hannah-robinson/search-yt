@@ -1,1 +1,3 @@
-const channels = require('./channels')
+const { pressEnter } = require('./lib.js')
+
+pressEnter()

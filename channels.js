@@ -43,3 +43,5 @@ const channels = [
   'Coreyms',
   'FabioAkita1990',
 ]
+
+module.exports = channels

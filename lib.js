@@ -1,7 +1,7 @@
 const fs = require('fs')
-const path = require('path')
 const readline = require('readline')
 const open = require('open')
+const channels = require('./channels')
 
 function pressEnter() {
   const rl = readline.createInterface({
@@ -13,7 +13,7 @@ function pressEnter() {
     '\nEnter your search terms and press the "return" key.\n',
     function (input) {
       rl.close()
-      search(getUrls(input))
+      openUrlsInBrowser(input)
     }
   )
 }
@@ -23,3 +23,5 @@ function openUrlsInBrowser(searchTerm) {
     open(`https://www.youtube.com/c/${channel}/search?query=${searchTerm}`)
   )
 }
+
+module.exports = { pressEnter }

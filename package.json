@@ -20,5 +20,8 @@
   "homepage": "https://github.com/hannah-robinson/search-yt#readme",
   "devDependencies": {
     "jest": "^27.5.1"
+  },
+  "dependencies": {
+    "open": "^8.4.0"
   }
 }
